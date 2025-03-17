@@ -1,0 +1,16 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  """Obtiene la lista de mensajes"""
+  messages: [String!]!
+
+  """Agrega un mensaje y lo publica en tiempo real"""
+  addMessage(content: String!): String!
+}
+
+type Subscription {
+  """Suscripción para recibir nuevos mensajes"""
+  messageAdded: String!
+}
